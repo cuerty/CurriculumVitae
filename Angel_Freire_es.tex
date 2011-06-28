@@ -1,229 +1,173 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,11pt]{moderncv}
 
-%-----------------------------------------------------------
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{color}
-\usepackage{verbatim}
-\usepackage[pdftex]{hyperref}
-\hypersetup{
-    colorlinks,%
-    citecolor=black,%
-    filecolor=black,%
-    linkcolor=black,%
-    urlcolor=black     % can put red here to visualize the links
-}
-\urlstyle{same}
-\definecolor{mygrey}{gray}{.85}
-\textheight=9.0in
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+% moderncv themes
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and
+% 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[orange]{classic}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{0.375in}
-\addtolength{\textwidth}{0.5in}
-\addtolength{\topmargin}{-.500in}
-\addtolength{\textheight}{2in}
+% for web links
+\definecolor{href}{rgb}{0.2,0.4,0.65}
+\newcommand\weblink[2] {{\color{href} \href{#1}{#2}}}
+\newcommand\cvskill[2] {\cvline{#1}{
+\begin{minipage}[t]{%
+  \linewidth}\small #2
+\end{minipage}
+}}
 
-%-----------------------------------------------------------
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.3in}{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
-%-----------------------------------------------------------
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{Angel}
+\familyname{Freire}
+\title{Arquitecto de Software}
+\address{Av. Alberdi 4163 8C}{C1407GZI  Capital Federal, Argentina}
+\phone{+54 11 6379 9160}
+\mobile{+54 911 3005 1170}
+\email{cuerty@gmail.com}
+\homepage{http://ar.linkedin.com/in/angelfreire}
+
+\nopagenumbers{}
 
 \begin{document}
-\newcommand{\myheader}{
-\begin{tabular*}{6.85in}{l@{\extracolsep{\fill}}r}
-	\textbf{\LARGE Angel Freire}  & 1983-03-30 (28 a\~nos)\\
-	(011) 6379-9160 / (011) 15-3005-1170 & cuerty@gmail.com \\
-	Av. Alberdi 4163 8vo "C", Capital Federal, C.P. C1407GZI & \href{http://ar.linkedin.com/in/angelfreire}{http://ar.linkedin.com/in/angelfreire} \\
-	\end{tabular*}
-\\
-\vspace{0.1in}}
+\maketitle
 
-\myheader
+\section{Objetivos}
+Liderar equipos en el desarrollo y entrega de productos de alta calidad. Ser
+entrenado en nuevas tecnolog\'ias y metodolog\'ias de trabajo. Conocer
+profesionales de distintas industrias y aprender de ellos.
 
-%%%%%%%%%%%%%%%%%%%%%%
+\section{Descripci\'on}
+Me gustan los desaf\'ios t\'ecnicos. Creo que el verdadero desaf\'io de
+desarrollar software est\'a en definir bien las especificaciones y manejar las
+expectativas de los clientes. Me gusta programar bien, utilizando la
+herramienta correcta para el problema y no reinventar la rueda. En mi
+opini\'on, el formar un buen grupo de trabajo es fundamental para dar las
+mejores soluciones posibles. Me agrada usar Open Source, leer el c\'odigo del
+software que utilizo, modificarlo y mejorarlo. Estoy especialmente interesado
+por los desaf\'ios que involucran grandes vol\'umenes de datos y concurrencia.
 
-\resheading{Objetivo}
-	\begin{description}
-		\item {
-            \ \ \ Liderar equipos en el desarrollo y entrega de productos de
-            alta calidad. Ser entrenado en nuevas tecnolog\'ias y metodolog\'ias
-            de trabajo. Conocer profesionales de distintas industrias y aprender
-            de ellos.
-        }
-	\end{description}
+\section{Antecedentes Laborales en Relaci\'on de Dependencia}
+\cventry{Enero 2011\\Junio 2011}{Lider t\'ecnico de plataformas}
+{\weblink{http://www.movile.com}{Movile}}{Buenos Aires, Argentina}{}{%
+\begin{itemize}
+  \item Document\'e las distintas conexiones existentes.
+  \item Dise\~n\'e las estrategias para la integraci\'on de las plataformas de la empresa.
+  \item Lider\'e la integraci\'on de las plataformas de mensajer\'ia, suscriptores y cobros en la fusi\'on Movile - Cyclelogic.
+\end{itemize}
+}
+%
+\cventry{Febrero 2007\\Diciembre 2010}{Jefe de Arquitectura}
+{\weblink{http://www.cyclelogic.com}{Cyclelogic}}{Buenos Aires, Argentina}{}{%
+\begin{itemize}
+  \item Document\'e las distintas conexiones existentes.
+  \item Lider\'e equipos de hasta 12 desarrolladores manejando varios proyectos simult\'aneamente.
+  \item Defin\'i los procesos de entrevistas de programadores. Tarea que estuvo a mi cargo durante todo el per\'iodo.
+  \item Organic\'e la documentacion t\'ecnica de la empresa utilizando un software de Wiki.
+  \item Organic\'e la adopci\'on de herramientas de integraci\'on continua.
+  \item Organic\'e la adopci\'on de herramientas de tickets.
+  \item Instalaci\'on y administraci\'on de servidores Linux, MySQL y PostgreSQL.
+  \item Lider\'e la restructuraci\'on de varias de las plataformas base, asi como su actualizaci\'on y puesta en producci\'on.
+  \item Instaur\'e el uso de herramientas de control de versi\'on.
+  \item Instaur\'e el realizar code reviews.
+  \item Organic\'e la capacitaci\'on de los equipos en distintas tecnolog\'ias y herramientas.
+  \item Dise\~n\'e, desarroll\'e e implement\'e distintas plataformas utilizando Python, C++ y PostgreSQL.
+  \item Estuve a cargo de la integraci\'on con varios clientes y proveedores con los cuales tuve trato directo.
+\end{itemize}
+}
+%
+\cventry{Noviembre 2006\\Enero 2007}{Desarrollador Senior}
+{\weblink{http://www.cyclelogic.com}{Cyclelogic}}{Buenos Aires, Argentina}{}{%
+\begin{itemize}
+  \item Dise\~no y desarrollo de plataforma de mensajer\'ia SMS y MMS en Python y Delphi.
+  \item Mantenimiento de plataformas base de la empresa hechas en Delphi y Python.
+  \item Instal\'e y configur\'e varios de los servidores Linux y MySQL utilizados.
+  \item Escrib\'i la documentaci\'on t\'ecnica de los desarrollos realizados.
+\end{itemize}
+}
+%
+\cventry{Enero 2004\\Enero 2005}{Desarrollador Semi Senior}
+{\weblink{http://www.iadb.org}{Banco Interamericano de Desarrollo}}{Buenos Aires, Argentina}{}{%
+\begin{itemize}
+  \item Relevamiento de los requisitos funcionales para sistema de control de becas (viandas alimenticias).
+  \item Instal\'e y configur\'e varios servidores Linux tanto para desarrollo y homologaci\'on como para producci\'on.
+  \item Desarroll\'e el sistema de control de becas escolares utilizando .NET Framework 1.0.
+  \item Realic\'e la documentaci\'on de todos los m\'odulos que compon\'ian a la soluci\'on.
+  \item Lider\'e el equipo de deployment e implementaci\'on in-situ.
+\end{itemize}
+}
+%
+\cventry{Enero 2004\\Enero 2005}{Desarrollador Senior}
+{\weblink{http://www.buenosaires.gov.ar/areas/educacion}{Secretaria de Educaci\'on}}{Buenos Aires, Argentina}{}{%
+\begin{itemize}
+  \item Configur\'e y administr\'e servidores de bases de datos PostgreSQL, MySQL y OpenLDAP.
+  \item Instal\'e y configur\'e varios servidores Linux tanto para desarrollo y homologaci\'on como para producci\'on.
+  \item Desarroll\'e el sistema de control de gesti\'on integral utilizando Visual Basic 6.
+  \item Desarroll\'e el sistema "Mesa de Entrada" utilizando Visual Basic 6.
+\end{itemize}
+}
 
-%%%%%%%%%%%%%%%%%%%%%%
+\section{Antecedentes Laborales como Free Lancer}
+\cventry{2000}{Lider t\'ecnico y desarrollador}
+{Portal de Internet}{Buenos Aires, Argentina}{}{%
+\begin{itemize}
+  \item Dise\~n\'e y desarroll\'e un CMS utilizando PHP y MySQL con un backend en Visual Basic para cargar datos.
+\end{itemize}
+}
+%
+\cventry{2003}{Lider t\'ecnico y desarrollador}
+{Comercio Online}{Internacional}{}{%
+\begin{itemize}
+  \item Dise\~n\'e y desarroll\'e en PHP y MySQL un CMS integrado con gateways de pago internacionales.
+\end{itemize}
+}
+%
+\cventry{2005}{Administrador de sistemas}
+{Webmail}{Internacional}{}{%
+\begin{itemize}
+  \item Instal\'e y configur\'e una soluci\'on de webmail utilizando tecnolog\'ias de FreeBSD y MySQL para HA.
+\end{itemize}
+}
+%
+\cventry{2005\\2006}{Lider t\'ecnico y desarrollador}
+{Aplicaciones de Optimizacion Web para buscadores (SEO)}{Internacional}{}{%
+\begin{itemize}
+  \item Dise\~n\'e e implement\'e distintas aplicaciones orientadas a la optimaci\'on web.
+  \item Desarroll\'e clientes distribuibles utilizando .NET 2003 y 2005.  (.NET 1.0 y 1.1)
+  \item Desarroll\'e servicios web re utilizando bibliotecas programadas en distintos lenguajes. (Ruby, Perl, Python y PHP)
+\end{itemize}
+}
 
-\resheading{Descripci\'on}
-	\begin{description}
-		\item {
-            \ \ \ Me gustan los desaf\'ios t\'ecnicos. Creo que el verdadero
-            desaf\'io de desarrollar software est\'a en definir bien las
-            especificaciones y manejar las expectativas de los clientes. Me
-            gusta programar bien, utilizando la herramienta correcta para el
-            problema y no reinventar la rueda. En mi opini\'on, el formar un
-            buen grupo de trabajo es fundamental para dar las mejores
-            soluciones posibles. Me agrada usar Open Source, leer el c\'odigo del
-            software que utilizo, modificarlo y mejorarlo.
-        }
-	\end{description}
+\section{Conocimientos t\'ecnicos}
+\begin{itemize}
+\item Python: Twisted, Tornado, biblioteca est\'andar, Django, Flask, SQL Alchemy. Desarrollo de bibliotecas y m\'odulos utilizando la API de CPython, asi como uso de la misma para embeber Python en otros proyectos. Conocimiento avanzado.
+\item PHP: Manejo de bibliotecas PEAR, POO, PHP Unit y frameworks (Artisan, Symphony, CakePHP).  Conocimiento avanzado.
+\item C++: Desarrollo de aplicaciones y servicios. Bibliotecas boost, PoCo y QT. Conocimiento avanzado.
+\item .NET (C\#, Visual Basic): Windows Forms, Web Forms (Asp.NET), Asp.NET MVC, Unit Testing (NUnit), Mono. Conocimiento b\'asico.
+\item Bases de datos: PostgreSQL y MySQL: Conocimiento avanzado. SQL Server: Conocimiento intermedio.
+\item Bases de datos no relacionales: Redis, Tokyo Tyrant/Cabinet, MongoDB y CouchDB. Conocimiento intermedio.
+\item Linux: Tanto para servidores como para desktop. Conocimiento avanzado.
+\item Herramientas de integraci\'on continua y control de versi\'on: Buildbot, Hudson (Jenkins). GIT, Mercurial y Subversion.
+\item Message Oriented Brokers: RabbitMQ, Qpid, HornetQ. Conocimiento de los protocolos AMQP y Stomp. Conocimiento avanzado.
+\item Otros: GNU Toolchain. Conocimientos de C, Perl, Ruby, sed, awk y Visual Basic. Administraci\'on de Linux, FreeBSD, Solaris y Windows.
+\end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%
+\section{Educaci\'on Secundaria y Universitaria}
+\cventry{2001 -- Inconclusa}{Licenciatura en Ciencias de la Comunicaci\'on Social}{Facultad de Ciencias Sociales (UBA)}{Argentina}{}{}
+\cventry{1996 -- 2000}{Bachiller en Comunicaci\'on social}{Escuela Julio Cort\'azar}{Argentina}{}{}
 
-\resheading{Antecedentes Laborales en Relaci\'on de Dependencia}
-	\begin{itemize}
-		\item
-			\ressubheading{ Movile } { Lider t\'ecnico de plataformas } { Capital Federal } { Enero 2011 -- Junio 2011 }
-				{ \footnotesize
-					\begin{itemize}
-						\resitem{ Document\'e las distintas conexiones existentes. }
-						\resitem{ Dise\~n\'e las estrategias para la integraci\'on de las plataformas de la empresa. }
-						\resitem{ Lider\'e la integraci\'on de las plataformas de mensajer\'ia, suscriptores y cobros en la fusi\'on Movile - Cyclelogic. }
-					\end{itemize}
-          		}
-		\item
-			\ressubheading{ Cyclelogic } { Jefe de Arquitectura } { Capital Federal } { Febrero 2007 -- Diciembre 2010 }
-				{ \footnotesize
-					\begin{itemize}
-						\resitem{ Lider\'e equipos de hasta 12 desarrolladores manejando varios proyectos simult\'aneamente. }
-						\resitem{ Defin\'i los procesos de entrevistas de programadores. Tarea que estuvo a mi cargo durante todo el per\'iodo. }
-						\resitem{ Organic\'e la documentacion t\'ecnica de la empresa utilizando un software de Wiki. }
-						\resitem{ Organic\'e la adopci\'on de herramientas de integraci\'on continua. }
-						\resitem{ Organic\'e la adopci\'on de herramientas de tickets. }
-						\resitem{ Instalaci\'on y administraci\'on de servidores Linux, MySQL y PostgreSQL. }
-						\resitem{ Lider\'e la restructuraci\'on de varias de las plataformas base, asi como su actualizaci\'on y puesta en producci\'on. }
-						\resitem{ Instaur\'e el uso de herramientas de control de versi\'on. }
-						\resitem{ Instaur\'e el realizar code reviews. }
-						\resitem{ Organic\'e la capacitaci\'on de los equipos en distintas tecnolog\'ias y herramientas. }
-						\resitem{ Dise\~n\'e, desarroll\'e e implement\'e distintas plataformas utilizando Python, C++ y PostgreSQL. }
-						\resitem{ Estuve a cargo de la integraci\'on con varios clientes y proveedores con los cuales tuve trato directo. }
-					\end{itemize}
-          		}
-		\item
-			\ressubheading{ Cyclelogic } { Desarrollador Senior } { Capital Federal } { Noviembre 2006 -- Enero 2007 }
-				{ \footnotesize
-					\begin{itemize}
-						\resitem{ Dise\~no y desarrollo de plataforma de mensajer\'ia SMS y MMS en Python y Delphi. }
-						\resitem{ Mantenimiento de plataformas base de la empresa hechas en Delphi y Python. }
-						\resitem{ Instal\'e y configur\'e varios de los servidores Linux y MySQL utilizados. }
-						\resitem{ Escrib\'i la documentaci\'on t\'ecnica de los desarrollos realizados. }
-					\end{itemize}
-          		}
-		\item
-			\ressubheading{ Banco Interamericano de Desarrollo } { Desarrollador Semi Senior } { Capital Federal } { Enero 2004 -- Enero 2005 }
-				{ \footnotesize
-					\begin{itemize}
-						\resitem{ Relevamiento de los requisitos funcionales para sistema de control de becas (viandas alimenticias). }
-						\resitem{ Instal\'e y configur\'e varios servidores Linux tanto para desarrollo y homologaci\'on como para producci\'on. }
-						\resitem{ Desarroll\'e el sistema de control de becas escolares utilizando .NET Framework 1.0. }
-						\resitem{ Realic\'e la documentaci\'on de todos los m\'odulos que compon\'ian a la soluci\'on. }
-						\resitem{ Lider\'e el equipo de deployment e implementaci\'on in-situ. }
-					\end{itemize}
-          		}
-        \item
-			\ressubheading{ Secretaria de Educaci\'on } { Desarrollador Junior } { Capital Federal } { Agosto 2002 -- Agosto 2003 }
-				{ \footnotesize
-					\begin{itemize}
-						\resitem{ Configur\'e y administr\'e servidores de bases de datos PostgreSQL, MySQL y OpenLDAP. }
-						\resitem{ Instal\'e y configur\'e varios servidores Linux tanto para desarrollo y homologaci\'on como para producci\'on. }
-						\resitem{ Desarroll\'e el sistema de control de gesti\'on integral utilizando Visual Basic 6. }
-						\resitem{ Desarroll\'e el sistema "Mesa de Entrada" utilizando Visual Basic 6. }
-					\end{itemize}
-          		}
-	\end{itemize}
+\section{Cursos realizados}
+\begin{itemize}
+\item Introducci\'on a la Inform\'atica IBM: Generalidades del manejo de sistemas operativos y software de oficina. (En centro IBM certificado)
+\item Programaci\'on: Estudio del fundamento y uso pr\'actico de los lenguajes l\'ogicos de programaci\'on. (Profesor Particular)
+\end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Antecedentes Laborales como Free Lancer}
-	\begin{itemize}
-		\item
-			\ressubheading{ Portal de Internet } { Lider t\'ecnico y desarrollador } { Capital Federal } { 2002 }
-				{ \footnotesize
-					\begin{itemize}
-						\resitem{ Dise\~n\'e y desarroll\'e un CMS utilizando PHP y MySQL con un backend en Visual Basic para cargar datos. }
-					\end{itemize}
-          		}
-		\item
-			\ressubheading{ Comercio Online } { Lider t\'ecnico y desarrollador } { Internacional } { 2003 }
-				{ \footnotesize
-					\begin{itemize}
-						\resitem{ Dise\~n\'e y desarroll\'e en PHP y MySQL un CMS integrado con gateways de pago internacionales. }
-					\end{itemize}
-          		}
-		\item
-			\ressubheading{ Webmail } { Administrador de sistemas } { Internacional } { 2005 }
-				{ \footnotesize
-					\begin{itemize}
-						\resitem{ Instal\'e y configur\'e una soluci\'on de webmail utilizando tecnolog\'ias de FreeBSD y MySQL para HA. }
-					\end{itemize}
-          		}
-		\item
-			\ressubheading{ Aplicaciones de Optimizacion Web para buscadores (SEO) } { Administrador de sistemas } { Internacional } { 2005 - 2006 }
-				{ \footnotesize
-					\begin{itemize}
-						\resitem{ Dise\~n\'e e implement\'e distintas aplicaciones orientadas a la optimaci\'on web. }
-						\resitem{ Desarroll\'e clientes distribuibles utilizando .NET 2003 y 2005.  (.NET 1.0 y 1.1) }
-						\resitem{ Desarroll\'e servicios web re utilizando bibliotecas programadas en distintos lenguajes. (Ruby, Perl, Python y PHP) }
-					\end{itemize}
-          		}
-	\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{ Conocimientos t\'ecnicos }
-	\begin{description}
-		\item[\ \ \ Python:] { \footnotesize Twisted, Tornado, biblioteca est\'andar, Django, Flask, SQL Alchemy. Desarrollo de bibliotecas y m\'odulos utilizando la API de CPython, asi como uso de la misma para embeber Python en otros proyectos. Conocimiento avanzado. }
-		\item[\ \ \ PHP:] { \footnotesize Manejo de bibliotecas PEAR, POO, PHP Unit y frameworks (Artisan, Symphony, CakePHP).  Conocimiento avanzado. }
-		\item[\ \ \ C++:] { \footnotesize Desarrollo de aplicaciones y servicios. Bibliotecas boost, PoCo y QT. Conocimiento avanzado. }
-		\item[\ \ \ .NET (C\#, Visual Basic):] { \footnotesize Windows Forms, Web Forms (Asp.NET), Asp.NET MVC, Unit Testing (NUnit), Mono. Conocimiento b\'asico. }
-		\item[\ \ \ PostgreSQL:] { \footnotesize Conocimiento avanzado. }
-		\item[\ \ \ MySQL:] { \footnotesize Conocimiento avanzado. }
-		\item[\ \ \ SQL Server:] { \footnotesize Conocimiento intermedio. }
-		\item[\ \ \ Bases de datos no relacionales:] { \footnotesize Redis, Tokyo Tyrant/Cabinet, MongoDB y CouchDB. Conocimiento intermedio. }
-		\item[\ \ \ Linux:] { \footnotesize Tanto para servidores como para desktop. Conocimiento avanzado. }
-		\item[\ \ \ Herramientas de integraci\'on continua y control de versi\'on:] { \footnotesize Buildbot, Hudson (Jenkins). GIT, Mercurial y Subversion. }
-		\item[\ \ \ Message Oriented Brokers:] { \footnotesize RabbitMQ, Qpid, HornetQ. Conocimiento de los protocolos AMQP y Stomp. Conocimiento avanzado. }
-		\item[\ \ \ Otros:] { \footnotesize GNU Toolchain. Conocimientos de C, Perl, Ruby, sed, awk y Visual Basic. Administraci\'on de Linux, FreeBSD, Solaris y Windows. }
-	\end{description}
-	
-%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Educaci\'on Secundaria y Universitaria}
-	\begin{itemize}
-		\item                                                                                                                                                                                     
-			\ressubheading{Facultad de Ciencias Sociales (UBA)} {Capital Federal} {Licenciatura en Ciencias de la Comunicaci\'on Social} {2001 -- Inconclusa}
-				{ \footnotesize }
-		\item
-			\ressubheading{Escuela Julio Cort\'azar} {Capital Federal} {Colegio Secundario} {1996 - 2000}
-				{ \footnotesize
-				\begin{itemize}
-					\resitem[\ \ \ Titulo obtenido:]{ Bachiller en Comunicaci\'on social. }
-				\end{itemize}
-				}
-	\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{ Cursos realizados }
-	\begin{description}
-		\item[\ \ \ Introducci\'on a la Inform\'atica IBM:] { \footnotesize Generalidades del manejo de sistemas operativos y software de oficina. (En centro IBM certificado) }
-		\item[\ \ \ Programaci\'on:] { \footnotesize Estudio del fundamento y uso pr\'actico de los lenguajes l\'ogicos de programaci\'on. (Profesor Particular) }
-	\end{description}
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{ Idiomas Extranjeros }
-	\begin{description}
-		\item[\ \ \ Ingl\'es:] { \footnotesize Nivel intermedio. }
-	\end{description}
+\section{Idiomas}
+\cvlanguage{Espa\~nol}{Nativo}{}
+\cvlanguage{Ingl\'es}{Nivel intermedio}{Nivel escrito avanzado, oral intermedio.}
 
 \end{document}
